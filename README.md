@@ -46,7 +46,7 @@ Both models are fine-tuned for the specific task of brain tumor classification.
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/salahradwan2210/brain-tumor-classification.git
 ```
 
 2. Install the required packages:
