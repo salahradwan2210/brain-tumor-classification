@@ -85,6 +85,40 @@ The models are trained to classify brain tumors into two categories:
 - Glioma
 - Meningioma
 
+### Model Performance
+
+#### DenseNet Results
+![DenseNet Performance](Densenet.png)
+- Final Training Accuracy: ~99%
+- Final Validation Accuracy: ~97%
+- Final Training Loss: ~0.03
+- Final Validation Loss: ~0.12
+
+#### ResNet Results
+![ResNet Performance](Resnet.png)
+- Final Training Accuracy: ~99%
+- Final Validation Accuracy: ~98%
+- Final Training Loss: ~0.03
+- Final Validation Loss: ~0.10
+
+#### Model Comparison
+![Model Comparison](resnet-densenet.png)
+
+Performance comparison on test set:
+- DenseNet:
+  - Test Accuracy: 98.73%
+  - Test Loss: 0.0443
+- ResNet:
+  - Test Accuracy: 96.20%
+  - Test Loss: 0.0824
+
+Key Observations:
+- Both models show excellent performance with >96% accuracy
+- DenseNet slightly outperforms ResNet on test data
+- DenseNet shows better loss metrics on test set
+- Both models demonstrate good convergence and minimal overfitting
+- Training stabilizes after approximately 5 epochs
+
 The trained models are saved as `.pth` files and can be used for inference on new brain MRI images.
 
 ## License
